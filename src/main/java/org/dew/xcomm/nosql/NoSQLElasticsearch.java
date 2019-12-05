@@ -30,11 +30,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.dew.xcomm.nosql.json.JSON;
 
-import org.dew.xcomm.nosql.util.Base64Coder;
-
-import org.dew.xcomm.nosql.util.WMap;
-import org.dew.xcomm.nosql.util.WUtil;
+import org.dew.xcomm.util.Base64Coder;
 import org.dew.xcomm.util.BEConfig;
+import org.dew.xcomm.util.WMap;
+import org.dew.xcomm.util.WUtil;
 
 /**
  * Implementazione di INoSQLDB per Elasticsearch.

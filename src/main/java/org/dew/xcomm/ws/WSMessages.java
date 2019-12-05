@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 
-import org.dew.xcomm.nosql.util.WUtil;
+import org.dew.xcomm.util.WUtil;
 
 import org.dew.xcomm.messaging.XMessage;
 import org.dew.xcomm.messaging.XMessagingClient;

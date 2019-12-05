@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.dew.xcomm.nosql.util;
+package org.dew.xcomm.util;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

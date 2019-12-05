@@ -33,10 +33,9 @@ import org.jxmpp.jid.Jid;
 import org.jxmpp.jid.impl.JidCreate;
 import org.jxmpp.jid.parts.Localpart;
 
-import org.dew.xcomm.nosql.util.WUtil;
-
 import org.dew.xcomm.util.BEConfig;
 import org.dew.xcomm.util.ConnectionManager;
+import org.dew.xcomm.util.WUtil;
 
 public 
 class XMessagingClient 

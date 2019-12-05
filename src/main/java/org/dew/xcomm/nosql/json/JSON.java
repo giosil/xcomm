@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
 
-import org.dew.xcomm.nosql.util.WUtil;
+import org.dew.xcomm.util.WUtil;
 
 /**
  * Utility class to parse JSON text and/or to convert in JSON text.

@@ -11,10 +11,10 @@ import org.apache.log4j.Logger;
 
 import org.jivesoftware.smack.packet.XMPPError;
 
-import org.dew.xcomm.nosql.*;
-import org.dew.xcomm.nosql.util.WUtil;
+import org.dew.xcomm.nosql.INoSQLDB;
 
 import org.dew.xcomm.util.ConnectionManager;
+import org.dew.xcomm.util.WUtil;
 
 public 
 class XMessagingManager 

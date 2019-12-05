@@ -8,8 +8,6 @@ import java.util.Date;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
-import org.dew.xcomm.nosql.util.WUtil;
-
 @SuppressWarnings({"rawtypes"})
 public
 class BEConfig
@@ -164,7 +162,7 @@ class BEConfig
 		if(sResult == null || sResult.length() == 0) {
 			sResult = getProperty("nosqldb.url");
 		}
-		String sDbName = "fse";
+		String sDbName = "xcomm";
 		int iLastSep = sResult.lastIndexOf('/');
 		if(iLastSep > 0) {
 			sDbName = sResult.substring(iLastSep + 1);

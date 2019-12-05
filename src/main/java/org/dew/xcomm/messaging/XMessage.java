@@ -6,8 +6,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.dew.xcomm.nosql.json.*;
-import org.dew.xcomm.nosql.util.*;
+import org.dew.xcomm.nosql.json.JSON;
+
+import org.dew.xcomm.util.WMap;
+import org.dew.xcomm.util.WUtil;
 
 public 
 class XMessage implements Serializable

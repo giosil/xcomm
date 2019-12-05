@@ -20,8 +20,9 @@ import javax.naming.InitialContext;
 import org.bson.types.ObjectId;
 
 import org.dew.xcomm.nosql.json.JSON;
-import org.dew.xcomm.nosql.util.WUtil;
+
 import org.dew.xcomm.util.BEConfig;
+import org.dew.xcomm.util.WUtil;
 
 import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;

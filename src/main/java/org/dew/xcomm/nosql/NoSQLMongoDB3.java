@@ -19,9 +19,9 @@ import org.bson.Document;
 import org.bson.types.ObjectId;
 
 import org.dew.xcomm.nosql.json.JSON;
-import org.dew.xcomm.nosql.util.WUtil;
 
 import org.dew.xcomm.util.BEConfig;
+import org.dew.xcomm.util.WUtil;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;

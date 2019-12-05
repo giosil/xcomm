@@ -9,7 +9,7 @@ import java.io.StringReader;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import org.dew.xcomm.nosql.util.Base64Coder;
+import org.dew.xcomm.util.Base64Coder;
 
 /*
 Copyright (c) 2002 JSON.org

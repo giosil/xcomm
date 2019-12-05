@@ -44,7 +44,7 @@ import java.util.ResourceBundle;
 import java.util.Set;
 import java.util.TimeZone;
 
-import org.dew.xcomm.nosql.util.Base64Coder;
+import org.dew.xcomm.util.Base64Coder;
 
 /**
  * A JSONObject is an unordered collection of name/value pairs. Its external

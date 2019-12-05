@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.dew.xcomm.nosql.util;
+package org.dew.xcomm.util;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
@@ -26,9 +26,6 @@ import java.util.Properties;
 import java.util.Stack;
 import java.util.TreeMap;
 import java.util.TreeSet;
-
-import org.dew.xcomm.nosql.util.Arrays;
-import org.dew.xcomm.nosql.util.WUtil;
 
 @SuppressWarnings({"rawtypes","unchecked"})
 public
