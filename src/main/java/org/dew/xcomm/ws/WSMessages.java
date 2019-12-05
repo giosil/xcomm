@@ -25,7 +25,6 @@ class WSMessages
 	
 	/**
 	 * Servizio per l'invio di un messaggio.
-	 * REST URL: http://host:port/xcomm/rest/message
 	 * 
 	 * @param mapMessage Messaggio
 	 * @return Token (thread) della conversazione
@@ -79,7 +78,6 @@ class WSMessages
 	
 	/**
 	 * Servizio per la lettura dei messaggi ricevuti
-	 * REST URL: http://host:port/xcomm/rest/message/all?thread=[thread]
 	 * 
 	 * @param options opzioni di ricerca (ad es. all)
 	 * @param mapFilter Filtro sui messaggi (generalmente per thread)
