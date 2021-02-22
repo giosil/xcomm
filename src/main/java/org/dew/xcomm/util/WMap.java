@@ -394,6 +394,11 @@ class WMap implements Map
     return WUtil.toSQLDate(get(key), oDefault);
   }
   
+  public java.sql.Date getSQLDate(Object key, Object oDefault, Object oTime) {
+    java.sql.Date result = WUtil.toSQLDate(get(key), oDefault);
+    return WUtil.setTime(result, oTime);
+  }
+  
   public java.sql.Time getSQLTime(Object key) {
     return WUtil.toSQLTime(get(key), null);
   }

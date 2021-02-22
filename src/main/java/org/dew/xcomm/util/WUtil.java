@@ -1029,6 +1029,48 @@ class WUtil
   }
   
   public static
+  java.sql.Date setTime(java.sql.Date date, Object oTime)
+  {
+    if(date == null) return date;
+    
+    if(oTime instanceof Number) {
+      Calendar calendar = Calendar.getInstance();
+      calendar.setTimeInMillis(date.getTime());
+      int iTime = ((Number) oTime).intValue();
+      if(iTime == 0) {
+        calendar.set(Calendar.HOUR_OF_DAY, 0);
+        calendar.set(Calendar.MINUTE,      0);
+        calendar.set(Calendar.SECOND,      0);
+        calendar.set(Calendar.MILLISECOND, 0);
+        date.setTime(calendar.getTimeInMillis());
+        return date;
+      }
+      else
+      if(iTime == 2359 || iTime == 235959 || iTime == 2400 || iTime == 240000) {
+        calendar.set(Calendar.HOUR_OF_DAY,  23);
+        calendar.set(Calendar.MINUTE,       59);
+        calendar.set(Calendar.SECOND,       59);
+        calendar.set(Calendar.MILLISECOND, 999);
+        date.setTime(calendar.getTimeInMillis());
+        return date;
+      }
+    }
+    
+    Calendar calTime = toTimeCalendar(oTime, null);
+    if(calTime == null) return date;
+    
+    Calendar calendar = Calendar.getInstance();
+    calendar.setTimeInMillis(date.getTime());
+    calendar.set(Calendar.HOUR_OF_DAY, calTime.get(Calendar.HOUR_OF_DAY));
+    calendar.set(Calendar.MINUTE,      calTime.get(Calendar.MINUTE));
+    calendar.set(Calendar.SECOND,      calTime.get(Calendar.SECOND));
+    calendar.set(Calendar.MILLISECOND, calTime.get(Calendar.MILLISECOND));
+    
+    date.setTime(calendar.getTimeInMillis());
+    return date;
+  }
+  
+  public static
   java.util.Calendar setTime(java.util.Calendar calendar, Object oTime)
   {
     if(calendar == null) return calendar;
