@@ -367,10 +367,15 @@ public class JSONTokener {
         return r.getTime();
       }
     }
-    if(s.startsWith("[B@")) {
+    if(JSON.BYTEARRAY_PREFIX != null && JSON.BYTEARRAY_PREFIX.length() > 0 && s.startsWith(JSON.BYTEARRAY_PREFIX)) {
       String sBase64 = s.substring(3);
       if(sBase64.length() == 0) return new byte[0];
-      return Base64Coder.decode(sBase64);
+      try {
+        return Base64Coder.decode(sBase64);
+      }
+      catch(Exception ex) {
+        return s;
+      }
     }
     return s;
   }

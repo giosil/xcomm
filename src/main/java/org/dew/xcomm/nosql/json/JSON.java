@@ -1,5 +1,7 @@
 package org.dew.xcomm.nosql.json;
 
+import java.text.DateFormat;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +16,9 @@ import org.dew.xcomm.util.WUtil;
 public
 class JSON
 {
+  public static String BYTEARRAY_PREFIX = "[B@";
+  public static DateFormat DATE_FORMAT  = null;
+  
   public static
   void setDefaultTimeZone(TimeZone timeZone)
   {
